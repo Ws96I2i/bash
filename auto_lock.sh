@@ -11,23 +11,24 @@
 # https://www.tumblr.com/blog/rootchallenger
 # https://mastodon.social/@Root_Challenger
 # Revision: 1.0.0
-在终端中赋予脚本执行权限：chmod +x auto_lock.sh
-使用 sudo 权限运行脚本：sudo ./auto_lock.sh
-需要依赖于iftop命令。MacOS需要额外安装。脚本未集成
-请在这里手动安装：
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/usr/local/bin/brew shellenv)"' >> /Users/你的用户名/.zprofile
-eval "$(/usr/local/bin/brew shellenv)"
-brew help
-brew update
-brew install iftop 
-安装完毕后，需要找到你的网卡
-ifconfig -a 
-一般是en0但是你需要查看一下 不对的话 你自己需要找到正确的
-另外你的终端机需要macOS 辅助使用的权限
-不然不能实现锁屏。
-在此之前你可以先试一下 osascript -e 'tell application "System Events" to keystroke "q" using {control down, command down}' 锁屏 
-此脚本仅适用于macOS环境
+#特别说明
+#在终端中赋予脚本执行权限：chmod +x auto_lock.sh
+#使用 sudo 权限运行脚本：sudo ./auto_lock.sh
+#需要依赖于iftop命令。MacOS需要额外安装。脚本未集成
+#请在这里手动安装：
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# echo 'eval "$(/usr/local/bin/brew shellenv)"' >> /Users/你的用户名/.zprofile
+# eval "$(/usr/local/bin/brew shellenv)"
+# brew help
+# brew update
+# brew install iftop 
+# 安装完毕后，需要找到你的网卡
+# ifconfig -a 
+# 一般是en0但是你需要查看一下 不对的话 你自己需要找到正确的
+# 另外你的终端机需要macOS 辅助使用的权限
+# 不然不能实现锁屏。
+# 在此之前你可以先试一下 osascript -e 'tell application "System Events" to keystroke "q" using {control down, command down}' 锁屏 
+# 此脚本仅适用于macOS环境
 ###############################################################
 sudo pmset -a sleep 0
 sudo pmset -a hibernatemode 0
