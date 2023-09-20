@@ -3,7 +3,7 @@
 # Copyright 2023,
 # All rights reserved.
 # FileName:    auto_lock.sh
-# Update time ：2023-09-20 01:02:51 PDT
+# time ：2023-09-20 01:02:51 PDT
 # Description: 针对于MacBook 进行上传任务时避免休眠和无人状态下自动锁屏
 # Author:观察者
 # https://twitter.com/ROOT_Challenger
