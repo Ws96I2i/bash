@@ -70,7 +70,7 @@ idle_check_process() {
             echo "由于长时间无操作，正在锁定屏幕..."
             osascript -e 'tell application "System Events" to key code 12 using {control down, command down}'
         fi
-        sleep 10
+        sleep 30
     done
 }
 
